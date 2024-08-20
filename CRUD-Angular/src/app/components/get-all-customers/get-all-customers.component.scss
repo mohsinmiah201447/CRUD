@@ -1,0 +1,83 @@
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Button styles */
+.btn-new {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+/* Table styles */
+table {
+    width: 80%; /* Adjust width as needed */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.table{
+    align-items: center;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Centering action buttons within table cells */
+td.btn-update, td.btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td.btn-update {
+    background-color: #2196F3; /* Blue */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from routerLink */
+}
+
+td.btn-delete {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+td.btn-update:hover, td.btn-delete:hover {
+    opacity: 0.8;
+}

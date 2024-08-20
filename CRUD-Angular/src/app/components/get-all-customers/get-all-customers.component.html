@@ -1,0 +1,21 @@
+<button class="btn-new" routerLink="/post-customer">Post New Customer</button>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{customer.name}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.phone}}</td>
+            <td class="btn-update" routerLink="/customer/{{customer.id}}">Update</td>
+            <td class="btn-delete" (click)="deleteCustomer(customer.id)">Delete</td>
+        </tr>
+    </tbody>
+</table>
